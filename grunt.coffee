@@ -4,8 +4,8 @@ module.exports = (grunt)->
 		pkg: "<json:package.json>"
 		coffee:
 			self:
-				src: ["grunt.coffee"]
-				dest: "./"
+				files:
+					"grunt.js": ["grunt.coffee"]
 				options:
 					bare: true
 		jade:
