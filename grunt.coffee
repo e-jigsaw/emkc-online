@@ -32,7 +32,7 @@ module.exports = (grunt)->
 					"ads.html": ["ads.jade"]
 
 		watch:
-			files: ["grunt.coffee", "index.jade"]
+			files: ["grunt.coffee", "*.jade"]
 			tasks: "coffee jade"
 
 		grunt.loadNpmTasks "grunt-coffee"
