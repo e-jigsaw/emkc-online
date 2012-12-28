@@ -30,6 +30,13 @@ module.exports = (grunt)->
 						pretty: true
 				files:
 					"ads.html": ["ads.jade"]
+			articles:
+				options:
+					data:
+						debug: false
+						pretty: true
+				files:
+					"articles.html": ["articles.jade"]
 
 		watch:
 			files: ["grunt.coffee", "*.jade"]
