@@ -16,6 +16,20 @@ module.exports = (grunt)->
 						pretty: true
 				files:
 					"index.html": ["index.jade"]
+			backnumber:
+				options:
+					data:
+						debug: false
+						pretty: true
+				files:
+					"backnumber.html": ["backnumber.jade"]
+			ads:
+				options:
+					data:
+						debug: false
+						pretty: true
+				files:
+					"ads.html": ["ads.jade"]
 
 		watch:
 			files: ["grunt.coffee", "index.jade"]
