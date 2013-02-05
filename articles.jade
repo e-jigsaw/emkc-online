@@ -1,87 +1,55 @@
-doctype html
-html
-	head
-		meta(charset="utf-8")
-		meta(http-equiv="X-UA-Compatible", content="chrome=1")
-		title EMKC-Online::Alpha
-		link(rel="stylesheet", href="stylesheets/styles.css")
-		link(rel="stylesheet", href="stylesheets/pygment_trac.css")
-		script(type="text/javascript", src="http://code.jquery.com/jquery-latest.js")
-		script(type="text/javascript", src="javascripts/main.js")
-	body
-		.wrapper
-			header
-				h1 EMKC-Online::Alpha
-				p EMKC-Online::Alpha
-				p
-					a(href="backnumber.html") バックナンバー
-				p
-					a(href="ads.html") 広告募集
-				p
-					a(href="articles.html") 記事募集
-				h3 現在のお知らせ
-				p 
-					| 広告を募集しています。詳しくは
-					a(href="ads.html") 広告募集
-					| をご覧ください。
-
-			section
-				h1 記事募集
-				p EM高専カンファレンス編集部では、記事を書きたいという人を募集しています。
-				ul 
-					li 高専での学びや挑戦に関すること
-					li 高専での生活に関すること
-					li 部活やコミュニティ、イベントなどに関すること-卒業後の仕事やつながりに関すること
-					li 高専カンファレンスに関すること
-					li 技術に関することなど
-				p これについて書きたい！という熱い想いをお持ちの方は、ぜひ編集部まで以下の要項をお送りください。
-			
-			section
-				h2 記事執筆応募要項
-				ul
-					li お名前
-					li 所属（社会人、学生　ほか）
-					li 仮タイトル／500字以内の概要
-					li 記事分量の要望
-						ul
-							li 1500字（1p）コース
-							li 3000字（2p）コース
-					li 対象読者
-						ul
-							li 中学生／高専新入生・現役生・卒業生／保護者／先生方
-							li 一般
-					li ジャンル
-					li 特定の掲載時期の希望有無
-					li 備考など
-					li 連絡のとれるメールアドレス
-			
-			section
-				h2 注意事項
-				ul
-					li 応募頂いた記事案については、記事の収集状況などによっては現在編集中の号への掲載ができないことがあります。
-					li 掲載が次号以降となってしまった記事については、本Webサイトに今後掲載予定の記事／筆者の方として一覧化し、公開させていただきます。
-					li 未掲載の執筆希望記事が多く集まった場合は、オンライン特別号などでの記事公開措置をとる場合がございます。
-					li 記事について掲載時期（今号の掲載でないとならない、何月頃に載せるべき内容である）などの強い希望がある際は備考にお書きください。
-					li 掲載決定のご連絡、執筆開始のお願いなどは改めてこちらからメールアドレスへご連絡させていただきます。
-			section
-				h2 待機記事一覧
-				table
-					tr
-						th 番号
-						th 名前
-						th タイトル
-						th リスト追加日
-					tr
-						td 例
-						td 柏 夏美
-						td あなたもつくれるWebサービス(仮)
-						td 2013/01/07
-
-			footer
-				p EMKC project ALL RIGHTS RESERVED
-				address
+include header.jade
+	block content
+		section
+			h1 記事募集
+			p EM高専カンファレンス編集部では、記事を書きたいという人を募集しています。
+			ul 
+				li 高専での学びや挑戦に関すること
+				li 高専での生活に関すること
+				li 部活やコミュニティ、イベントなどに関すること-卒業後の仕事やつながりに関すること
+				li 高専カンファレンスに関すること
+				li 技術に関することなど
+			p これについて書きたい！という熱い想いをお持ちの方は、ぜひ編集部まで以下の要項をお送りください。
+		
+		section
+			h2 記事執筆応募要項
+			ul
+				li お名前
+				li 所属（社会人、学生　ほか）
+				li 仮タイトル／500字以内の概要
+				li 記事分量の要望
 					ul
-						li Auther: Takaya Kobayashi(a.k.a. Jigsaw) / m[at]jgs.me
-						li EMKC-Online: EMKC project / 
-							a(href="mailto:contact@manaslink.com") contact@manaslink.com
-		script(type="text/javascript", src="javascripts/scale.fix.js")
+						li 1500字（1p）コース
+						li 3000字（2p）コース
+				li 対象読者
+					ul
+						li 中学生／高専新入生・現役生・卒業生／保護者／先生方
+						li 一般
+				li ジャンル
+				li 特定の掲載時期の希望有無
+				li 備考など
+				li 連絡のとれるメールアドレス
+		
+		section
+			h2 注意事項
+			ul
+				li 応募頂いた記事案については、記事の収集状況などによっては現在編集中の号への掲載ができないことがあります。
+				li 掲載が次号以降となってしまった記事については、本Webサイトに今後掲載予定の記事／筆者の方として一覧化し、公開させていただきます。
+				li 未掲載の執筆希望記事が多く集まった場合は、オンライン特別号などでの記事公開措置をとる場合がございます。
+				li 記事について掲載時期（今号の掲載でないとならない、何月頃に載せるべき内容である）などの強い希望がある際は備考にお書きください。
+				li 掲載決定のご連絡、執筆開始のお願いなどは改めてこちらからメールアドレスへご連絡させていただきます。
+		section
+			h2 待機記事一覧
+			table
+				tr
+					th 番号
+					th 名前
+					th タイトル
+					th リスト追加日
+				tr
+					td 例
+					td 柏 夏美
+					td あなたもつくれるWebサービス(仮)
+					td 2013/01/07
+	include footer.jade
+		block footer

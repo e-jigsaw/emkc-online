@@ -1,48 +1,16 @@
-doctype html
-html
-	head
-		meta(charset="utf-8")
-		meta(http-equiv="X-UA-Compatible", content="chrome=1")
-		title EMKC-Online::Alpha
-		link(rel="stylesheet", href="stylesheets/styles.css")
-		link(rel="stylesheet", href="stylesheets/pygment_trac.css")
-		script(type="text/javascript", src="http://code.jquery.com/jquery-latest.js")
-		script(type="text/javascript", src="javascripts/main.js")
-	body
-		.wrapper
-			header
-				h1 EMKC-Online::Alpha
-				p EMKC-Online::Alpha
-				p
-					a(href="backnumber.html") バックナンバー
-				p
-					a(href="ads.html") 広告募集
-				p
-					a(href="articles.html") 記事募集
-				h3 現在のお知らせ
-				p 
-					| 広告を募集しています。詳しくは
-					a(href="ads.html") 広告募集
-					| をご覧ください。
+include header.jade
+	block content
+		section
+			img(src="images/emkc1.png")
+			h1 高専の、高専生による、みんなのためのフリーペーパー
+			p EM高専カンファレンスは高専やそのOBが作成しているフリーペーパーです。これまでに2号発刊されています。現在、全国で配布中です。また、オンラインのビュワーでも閲覧することができます。
+			
+		section
+			h2 高専カンファレンスとは？
+			p 「高専カンファレンス」とは、その名称を用いて行われる、高等専門学校および高専生をテーマとする、勉強会をはじめとした各種活動（以下、「個別の活動」と言う）の総称、およびその集合体（以下、「コミュニティ」と言う）の名称のことを言います。
 
-			section
-				img(src="images/emkc1.png")
-				h1 高専の、高専生による、みんなのためのフリーペーパー
-				p EM高専カンファレンスは高専やそのOBが作成しているフリーペーパーです。これまでに2号発刊されています。現在、全国で配布中です。また、オンラインのビュワーでも閲覧することができます。
-				
-			section
-				h2 高専カンファレンスとは？
-				p 「高専カンファレンス」とは、その名称を用いて行われる、高等専門学校および高専生をテーマとする、勉強会をはじめとした各種活動（以下、「個別の活動」と言う）の総称、およびその集合体（以下、「コミュニティ」と言う）の名称のことを言います。
-
-				p 2008年6月の小さな集まり以降、高専特有のバイタリティ・結束感が生み出す高専内外のつながりを活かし、現在では既存の高専の枠組みを越え、全国的に広がっています。
-				p 詳しくはこちら→
-					a(href="http://kosenconf.jp") http://kosenconf.jp
-
-			footer
-				p EMKC project ALL RIGHTS RESERVED
-				address
-					ul
-						li Auther: Takaya Kobayashi(a.k.a. Jigsaw) / m[at]jgs.me
-						li EMKC-Online: EMKC project / 
-							a(href="mailto:contact@manaslink.com") contact@manaslink.com
-		script(type="text/javascript", src="javascripts/scale.fix.js")
+			p 2008年6月の小さな集まり以降、高専特有のバイタリティ・結束感が生み出す高専内外のつながりを活かし、現在では既存の高専の枠組みを越え、全国的に広がっています。
+			p 詳しくはこちら→
+				a(href="http://kosenconf.jp") http://kosenconf.jp
+	include footer.jade
+		block footer

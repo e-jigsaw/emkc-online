@@ -11,35 +11,35 @@ module.exports = (grunt)->
 		jade:
 			index:
 				options:
+					pretty: true
 					data:
 						debug: false
-						pretty: true
 				files:
 					"index.html": ["index.jade"]
 			backnumber:
 				options:
+					pretty: true
 					data:
 						debug: false
-						pretty: true
 				files:
 					"backnumber.html": ["backnumber.jade"]
 			ads:
 				options:
+					pretty: true
 					data:
 						debug: false
-						pretty: true
 				files:
 					"ads.html": ["ads.jade"]
 			articles:
 				options:
+					pretty: true
 					data:
 						debug: false
-						pretty: true
 				files:
 					"articles.html": ["articles.jade"]
 
 		watch:
-			files: ["grunt.coffee", "*.jade"]
+			files: ["*.jade"]
 			tasks: "coffee jade"
 
 		grunt.loadNpmTasks "grunt-coffee"
