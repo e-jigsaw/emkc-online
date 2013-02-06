@@ -12,6 +12,6 @@
 		"grunt-contrib": "0.3.0"
 	},
 	"scripts": {
-		"start": "coffee -b -c grunt.coffee; grunt coffee jade"
+		"start": "coffee -b -c grunt.coffee; grunt coffee jade:debug"
 	}
 }

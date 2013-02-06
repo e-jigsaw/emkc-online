@@ -9,34 +9,26 @@ module.exports = (grunt)->
 				options:
 					bare: true
 		jade:
-			index:
+			debug:
+				options:
+					pretty: true
+					data:
+						debug: true
+				files:
+					"index.html": "index.jade"
+					"backnumber": "backnumber.jade"
+					"ads.html": "ads.jade"
+					"articles.html": "articles.jade"
+			release:
 				options:
 					pretty: true
 					data:
 						debug: false
 				files:
-					"index.html": ["index.jade"]
-			backnumber:
-				options:
-					pretty: true
-					data:
-						debug: false
-				files:
-					"backnumber.html": ["backnumber.jade"]
-			ads:
-				options:
-					pretty: true
-					data:
-						debug: false
-				files:
-					"ads.html": ["ads.jade"]
-			articles:
-				options:
-					pretty: true
-					data:
-						debug: false
-				files:
-					"articles.html": ["articles.jade"]
+					"/var/www/index.html": "index.jade"
+					"/var/www/backnumber": "backnumber.jade"
+					"/var/www/ads.html": "ads.jade"
+					"/var/www/articles.html": "articles.jade"
 
 		watch:
 			files: ["*.jade"]
